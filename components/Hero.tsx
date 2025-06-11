@@ -16,8 +16,8 @@ export default function Hero() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">Valle del Norte</h1>
-            <p className="text-2xl lg:text-3xl text-green-700 font-medium">Agricultura Fresca y Natural</p>
+            <span className="text-6xl font-bold text-[#B8860B] font-serif tracking-wider">Valle del Norte</span>
+            <p className="text-2xl lg:text-3xl text-[#B8860B] font-medium">Agricultura Fresca y Natural</p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Más de 30 años llevando aceitunas desde el olivo hasta tu mesa. Tradición, calidad y frescura en cada
               producto.

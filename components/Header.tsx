@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,53 +21,57 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">VN</span>
-            </div>
-            <span className="text-2xl font-bold text-green-800">Valle del Norte</span>
+            <Image
+              src="/images/logo.png"
+              alt="Valle del Norte"
+              width={100}
+              height={100}
+              className="rounded-lg object-cover h-full mx-auto"
+            />
+            <span className="text-3xl font-bold text-[#B8860B] font-serif tracking-wider">Valle del Norte</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("historia")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Historia
             </button>
             <button
               onClick={() => scrollToSection("productos")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Productos
             </button>
             <button
               onClick={() => scrollToSection("compromiso")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Calidad
             </button>
             <button
               onClick={() => scrollToSection("donde-encontrarnos")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Dónde encontrarnos
             </button>
             <button
               onClick={() => scrollToSection("recetas")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Recetas
             </button>
             <button
               onClick={() => scrollToSection("contacto")}
-              className="text-green-700 hover:text-green-900 font-medium transition-colors"
+              className="text-[#B8860B] hover:text-[#8B6508] font-medium transition-colors"
             >
               Contacto
             </button>
@@ -84,43 +89,43 @@ export default function Header() {
             <div className="flex flex-col space-y-4 pt-4">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Inicio
               </button>
               <button
                 onClick={() => scrollToSection("historia")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Historia
               </button>
               <button
                 onClick={() => scrollToSection("productos")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Productos
               </button>
               <button
                 onClick={() => scrollToSection("compromiso")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Calidad
               </button>
               <button
                 onClick={() => scrollToSection("donde-encontrarnos")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Dónde encontrarnos
               </button>
               <button
                 onClick={() => scrollToSection("recetas")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Recetas
               </button>
               <button
                 onClick={() => scrollToSection("contacto")}
-                className="text-green-700 hover:text-green-900 font-medium text-left"
+                className="text-[#B8860B] hover:text-[#8B6508] font-medium text-left"
               >
                 Contacto
               </button>
