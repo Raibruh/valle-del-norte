@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function DondeEncontrarnos() {
   const supermercados = [
-    { name: "Jumbo", logo: "/placeholder.svg?height=80&width=120" },
-    { name: "Santa Isabel", logo: "/placeholder.svg?height=80&width=120" },
-    { name: "Spid", logo: "/placeholder.svg?height=80&width=120" },
-    { name: "Líder Walmart", logo: "/placeholder.svg?height=80&width=120" },
-    { name: "Tottus", logo: "/placeholder.svg?height=80&width=120" },
-    { name: "Unimarc", logo: "/placeholder.svg?height=80&width=120" },
+    { name: "Jumbo", logo: "/images/logos/jumbo.png?height=80&width=120", url: "https://www.jumbo.cl/busqueda?ft=valle+del+norte" },
+    { name: "Santa Isabel", logo: "/images/logos/santa-isabel.png?height=80&width=120", url: "https://www.santaisabel.cl/busqueda?ft=valle+del+norte" },
+    { name: "Spid", logo: "/images/logos/spid.png?height=80&width=120", url: "https://spidchile.cl/" },
+    { name: "Líder Walmart", logo: "/images/logos/lider.png?height=80&width=120", url: "https://www.lider.cl/supermercado/search?query=valle%20del%20norte" },
+    { name: "Tottus", logo: "/images/logos/tottus.png?height=80&width=120", url: "https://www.tottus.cl/tottus-cl/buscar?Ntt=valle+del+norte" },
+    { name: "Unimarc", logo: "/images/logos/unimarc.png?height=80&width=120", url: "https://www.unimarc.cl/search?q=valle-del-norte" },
   ]
 
   return (
@@ -21,22 +21,26 @@ export default function DondeEncontrarnos() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-0 mb-12 -mx-6">
           {supermercados.map((supermercado, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow border-green-200">
-              <CardContent className="p-6">
+            <a
+              key={index}
+              href={supermercado.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center hover:scale-105 transition-transform"
+            >
+              <div className="relative w-[180px] aspect-[3/2] flex items-center justify-center">
                 <Image
                   src={supermercado.logo || "/placeholder.svg"}
                   alt={`Logo ${supermercado.name}`}
-                  width={120}
-                  height={80}
-                  className="mx-auto mb-4 object-contain"
+                  fill
+                  className="object-contain"
                 />
-                <h3 className="text-lg font-semibold text-green-800">{supermercado.name}</h3>
-              </CardContent>
-            </Card>
+              </div>
+            </a>
           ))}
-        </div>
+        </div>  
 
         <div className="grid lg:grid-cols-2 gap-8">
           <Card className="border-green-200">

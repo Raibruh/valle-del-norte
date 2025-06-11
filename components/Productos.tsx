@@ -28,11 +28,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-verdes.png?height=200&width=300"
                     alt="Aceitunas Verdes"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Aceitunas Verdes</CardTitle>
                 </CardHeader>
@@ -48,11 +48,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-negras.png?height=200&width=300"
                     alt="Aceitunas Negras"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Aceitunas Negras</CardTitle>
                 </CardHeader>
@@ -68,11 +68,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-kalamata.png?height=200&width=300"
                     alt="Aceitunas Kalamata"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Kalamata / Al Natural</CardTitle>
                 </CardHeader>
@@ -86,11 +86,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-azapa.png?height=200&width=300"
                     alt="Aceitunas Azapa"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Azapa Naturales</CardTitle>
                 </CardHeader>
@@ -110,11 +110,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-premium-pimenton.png?height=200&width=300"
                     alt="Aceitunas Rellenas"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Verdes Rellenas</CardTitle>
                 </CardHeader>
@@ -134,11 +134,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-premium-coctel.png?height=200&width=300"
                     alt="Cocktail de Aceitunas"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Cocktail</CardTitle>
                 </CardHeader>
@@ -150,11 +150,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/aceitunas-premium-mix.png?height=200&width=300"
                     alt="Mix de Aceitunas"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Mix Premium</CardTitle>
                 </CardHeader>
@@ -170,11 +170,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/pasta-aceitunas-verdes.png?height=150&width=225"
                     alt="Pasta de Aceitunas Verdes"
-                    width={300}
-                    height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    width={225}
+                    height={150}
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Pasta de Aceitunas Verdes</CardTitle>
                 </CardHeader>
@@ -188,11 +188,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/pasta-aceitunas-negras.png?height=150&width=225"
                     alt="Pasta de Aceitunas Negras"
-                    width={300}
-                    height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    width={225} 
+                    height={150}
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Pasta de Aceitunas Negras</CardTitle>
                 </CardHeader>
@@ -206,11 +206,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/pasta-dulce-aceitunas.png?height=150&width=225"
                     alt="Pasta Dulce de Aceitunas"
-                    width={300}
-                    height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    width={225}
+                    height={150}
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Pasta Dulce (Mermelada)</CardTitle>
                 </CardHeader>
@@ -228,11 +228,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/productos/pichanga-premium.png?height=300&width=400"
                     alt="Pichanga Premium"
                     width={400}
                     height={300}
-                    className="rounded-lg object-cover w-full h-64"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Pichanga Premium</CardTitle>
                 </CardHeader>
@@ -255,11 +255,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/images/productos/potes-autoservicio.png?height=300&width=400"
                     alt="Potes Autoservicio"
                     width={400}
                     height={300}
-                    className="rounded-lg object-cover w-full h-64"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Potes Autoservicio</CardTitle>
                 </CardHeader>
@@ -288,11 +288,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/productos-beretta.png?height=200&width=300"
                     alt="Productos Beretta"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Productos BERETTA</CardTitle>
                 </CardHeader>
@@ -313,11 +313,11 @@ export default function Productos() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/productos/exclusividad-cencosud.png?height=200&width=300"
                     alt="Exclusividad Cencosud"
                     width={300}
                     height={200}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover h-full mx-auto"
                   />
                   <CardTitle className="text-green-800">Exclusividad</CardTitle>
                 </CardHeader>

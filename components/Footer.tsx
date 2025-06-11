@@ -1,6 +1,7 @@
 "use client"
 
 import { Instagram } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -17,10 +18,13 @@ export default function Footer() {
           {/* Logo y descripción */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-green-800 font-bold text-lg">VN</span>
-              </div>
-              <span className="text-2xl font-bold">Valle del Norte</span>
+              <Image
+                src="/images/logo.png"
+                alt="Valle del Norte"
+                width={100}
+                height={100}
+                className="rounded-lg object-cover h-full mx-auto"
+              />
             </div>
             <p className="text-green-100">
               Más de 30 años llevando aceitunas desde el olivo hasta tu mesa. Agricultura fresca y natural.
