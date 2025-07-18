@@ -1,9 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { IBM_Plex_Sans_Condensed } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const ibmPlex = IBM_Plex_Sans_Condensed({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex"
+})
 
 export const metadata: Metadata = {
   title: "Valle del Norte - Aceitunas Premium | Agricultura Fresca y Natural",
@@ -25,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <body className={`${ibmPlex.className} font-sans`}>{children}</body>
     </html>
   )
 }
