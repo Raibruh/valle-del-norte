@@ -39,9 +39,9 @@ export default function AceitunasVerdesRellenasPage() {
       descripcion: "Aceitunas verdes rellenas con ají natural, sabor picante y auténtico"
     },
     {
-        imagen: "/images/productos/packaging/premium_aceitunas_verdes_rellenas_almendras.jpg",
-        titulo: "Con Almendras",
-        descripcion: "Aceitunas verdes rellenas con almendras, sabor dulce y salado"
+      imagen: "/images/productos/packaging/premium_aceitunas_verdes_rellenas_almendras.jpg",
+      titulo: "Con Almendras",
+      descripcion: "Aceitunas verdes rellenas con almendras, sabor dulce y salado"
     },
     {
       imagen: "/images/productos/packaging/premium_aceitunas_verdes_rellenas_almendras_pimenton.jpg",

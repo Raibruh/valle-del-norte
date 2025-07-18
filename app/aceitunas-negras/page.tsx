@@ -34,14 +34,9 @@ export default function AceitunasNegrasPage() {
       descripcion: "Aceitunas negras maduras con carozo, de sabor intenso y característico"
     },
     {
-      imagen: "/images/productos/packaging/aceitunas_negras_descarozadas.jpg",
-      titulo: "Aceitunas Negras Descarozadas",
-      descripcion: "Aceitunas negras descarozadas, perfectas para ensaladas y platos gourmet"
-    },
-    {
-      imagen: "/images/productos/packaging/aceitunas_negras_rodajas.jpg",
-      titulo: "Aceitunas Negras en Rodajas",
-      descripcion: "Aceitunas negras cortadas en rodajas, ideales para pizzas y pastas"
+      imagen: "/images/productos/packaging/oliomio_aceitunas_negras.jpg",
+      titulo: "Aceitunas Negras Oliomio",
+      descripcion: "Aceitunas negras oliomio, de sabor intenso y característico"
     }
   ];
 
@@ -120,7 +115,7 @@ export default function AceitunasNegrasPage() {
               Nuestras Variedades
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-12">
+            <div className="grid md:grid-cols-2 gap-32">
               {productos.map((producto, index) => (
                 <div key={index} className="space-y-6">
                   <figure className="aspect-square rounded-2xl shadow-lg overflow-hidden bg-gray-100">
@@ -144,49 +139,7 @@ export default function AceitunasNegrasPage() {
           </section>
         </Reveal>
 
-        {/* Características */}
-        <Reveal>
-          <section className="text-center space-y-12">
-            <h2 className="text-5xl font-light text-green-800 leading-tight">
-              Características
-            </h2>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-16">
-              <div className="space-y-6">
-                <div className="w-20 h-20 bg-green-800 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-white text-3xl">🌙</span>
-                </div>
-                <h3 className="text-2xl font-light text-green-800 leading-tight">
-                  Maduración Completa
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed font-light">
-                  Cosechadas en su punto óptimo de maduración para máximo sabor
-                </p>
-              </div>
-              <div className="space-y-6">
-                <div className="w-20 h-20 bg-green-800 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-white text-3xl">⭐</span>
-                </div>
-                <h3 className="text-2xl font-light text-green-800 leading-tight">
-                  Sabor Intenso
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed font-light">
-                  Aroma y sabor profundo característico de las aceitunas maduras
-                </p>
-              </div>
-              <div className="space-y-6">
-                <div className="w-20 h-20 bg-green-800 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-white text-3xl">🏆</span>
-                </div>
-                <h3 className="text-2xl font-light text-green-800 leading-tight">
-                  Textura Premium
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed font-light">
-                  Carne suave y carnosa que se deshace en la boca
-                </p>
-              </div>
-            </div>
-          </section>
-        </Reveal>
+      
       </main>
     </>
   )

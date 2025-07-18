@@ -60,12 +60,8 @@ const PRODUCT_CATEGORIES = [
     products: [{ name: "Pichangas Premium", path: "/pichangas" }],
   },
   {
-    category: "POTES AUTOSERVICIO",
-    products: [{ name: "Potes Autoservicio", path: "/potes-autoservicio" }],
-  },
-  {
-    category: "PRODUCTOS IMPORTADOS DESDE ITALIA",
-    products: [{ name: "BERETTA", path: "/productos-beretta" }],
+    category: "OTROS",
+    products: [{ name: "Otros", path: "/otros" }],
   },
 ];
 
@@ -482,3 +478,4 @@ export default function Header() {
     </>
   );
 }
+              
