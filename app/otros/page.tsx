@@ -60,8 +60,10 @@ export default function Otros() {
         <Reveal>
           <section className="text-center -space-y-32">
             <div className="mx-auto w-[32rem] h-[32rem] flex items-center justify-center">
-              <img src="/images/logo.png" alt="Logo Valle del Norte"
-                   className="w-full h-full object-contain -mt-32" />
+              <a href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
+                <img src="/images/logo.png" alt="Logo Valle del Norte"
+                     className="w-full h-full object-contain -mt-32" />
+              </a>
             </div>
             <p className="text-[#3e541a] text-4xl font-light tracking-widest">
               OTROS&nbsp;PRODUCTOS
@@ -105,7 +107,6 @@ function Card({
             <img src={img} alt={alt} className="w-full h-full object-cover" />
           </figure>
           <div className="flex-1">
-            <Etiqueta />
             <Titulo>{title}</Titulo>
             <Descripcion>{description}</Descripcion>
             <Lista />

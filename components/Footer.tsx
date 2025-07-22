@@ -52,20 +52,21 @@ export default function Footer() {
         {/* Redes sociales y copyright */}
         <div className="border-t border-[#4a5f22] mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex space-x-6">
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <div className="flex items-center">
+              <a href="https://www.instagram.com/valledelnorte.cl/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
-            <p className="text-white/60 text-sm">
-              © 2024 Valle del Norte. Todos los derechos reservados.
-            </p>
+            <div className="text-center md:text-right">
+              <p className="text-white/60 text-sm mb-2">
+                © 2024 Valle del Norte. Todos los derechos reservados.
+              </p>
+              <div className="flex justify-center md:justify-end text-sm">
+                <a href="/terminos-condiciones" className="text-white/60 hover:text-white transition-colors">
+                  Términos de uso
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

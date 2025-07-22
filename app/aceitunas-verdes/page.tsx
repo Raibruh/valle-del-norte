@@ -72,11 +72,13 @@ export default function AceitunasVerdesPage() {
         <Reveal>
           <section className="text-center -space-y-32">
             <div className="mx-auto w-[32rem] h-[32rem] flex items-center justify-center">
-              <img
-                src="/images/logo.png"
-                alt="Logo Valle del Norte"
-                className="w-full h-full object-contain -mt-32"
-              />
+              <a href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
+                <img
+                  src="/images/logo.png"
+                  alt="Logo Valle del Norte"
+                  className="w-full h-full object-contain -mt-32"
+                />
+              </a>
             </div>
             <p className="text-[#3e541a] text-4xl font-light tracking-widest">
               ACEITUNAS&nbsp;VERDES
@@ -166,7 +168,7 @@ export default function AceitunasVerdesPage() {
         <Reveal>
           <section className="space-y-16">
             <h2 className="text-5xl font-light text-[#3e541a] text-center leading-tight">
-              Variedades Oliomio
+              Oliomio
             </h2>
             
             <div className="grid md:grid-cols-3 gap-12">

@@ -100,7 +100,13 @@ export default function Hero() {
                 `}
               >
                 <div className="space-y-4">
-                  <p className="text-[#3e541a] text-xl font-medium tracking-widest">ACEITUNAS&nbsp;DE&nbsp;MESA</p>
+                  {p.titulo === "Aceitunas Tradicionales" || p.titulo === "Aceitunas Premium" ? (
+                    <p className="text-[#3e541a] text-xl font-medium tracking-widest">ACEITUNAS&nbsp;DE&nbsp;MESA</p>
+                  ) : p.titulo === "Pichangas Premium" ? (
+                    <p className="text-[#3e541a] text-xl font-medium tracking-widest">PICHANGAS</p>
+                  ) : p.titulo === "Otros Productos" ? (
+                    <p className="text-[#3e541a] text-xl font-medium tracking-widest">OTROS</p>
+                  ) : null}
                   <h2 className="text-5xl md:text-6xl font-light text-[#3e541a] leading-tight">{p.titulo}</h2>
                   <div className="w-24 h-1 bg-[#3e541a]" />
                 </div>

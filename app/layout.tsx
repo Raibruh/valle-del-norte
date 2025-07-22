@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${ibmPlex.className} font-sans`}>{children}</body>
+      <body className={`${ibmPlex.className} font-sans`}>
+        {children}
+      </body>
     </html>
   )
 }
