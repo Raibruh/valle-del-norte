@@ -85,7 +85,7 @@ export default function AceitunasPremium() {
       descripcion: "Aceitunas verdes rellenas con jalapeño, sabor picante y auténtico"
     },
     {
-      imagen: "/images/productos/packaging/oliomio_aceitunas_verdes_rellenas_japaleno_ajo.jpg",
+      imagen: "/images/productos/packaging/oliomio_aceitunas_verdes_rellenas_jalapeno_ajo.jpg",
       titulo: "Con Jalapeño y Ajo",
       descripcion: "Aceitunas verdes rellenas con jalapeño y ajo, sabor picante y salado"
     },
