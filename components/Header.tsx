@@ -1,16 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu,
   X,
   ChevronRight,
-  Facebook,
-  Linkedin,
   Instagram,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import {
   motion,
   AnimatePresence,
@@ -52,10 +50,6 @@ const PRODUCT_CATEGORIES = [
     ],
   },
   {
-    category: "PASTAS",
-    products: [{ name: "Pastas de Aceitunas", path: "/pastas-aceitunas" }],
-  },
-  {
     category: "PICHANGAS",
     products: [{ name: "Pichangas Premium", path: "/pichangas" }],
   },
@@ -71,13 +65,28 @@ export default function Header() {
   const [showProductSubmenu, setShowProductSubmenu] = useState(false);
   const [showContactInfo, setShowContactInfo] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const navigateToPage = (path: string) => {
-    router.push(path);
-    setIsMenuOpen(false);
+    if (pathname === path) {
+      // Si estamos en la misma página, recargar
+      window.location.reload();
+    } else {
+      // Si es una página diferente, navegar normalmente
+      router.push(path);
+    }
+    // No cerramos el menú inmediatamente, se mantendrá abierto durante la navegación
     setShowProductSubmenu(false);
     setShowContactInfo(false);
   };
+
+  // Cerrar el menú cuando la página cambie
+  useEffect(() => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+      setIsClosing(false);
+    }
+  }, [pathname]);
 
   const closeMenu = () => {
     setIsClosing(true);
@@ -320,10 +329,15 @@ export default function Header() {
 
           {/* Iconos RRSS */}
           <div className="absolute bottom-0 left-0 p-8 pl-36 w-1/2">
-            <div className="flex space-x-8">
-              {[Facebook, Linkedin, Instagram].map((Icon, idx) => (
-                <button
+            <div className="flex items-center">
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/valledelnorte.cl/" }
+              ].map(({ Icon, href }, idx) => (
+                <a
                   key={idx}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`text-white hover:text-white/80 transition-all duration-1000 ${
                     isMenuOpen && !isClosing
                       ? "translate-y-0 opacity-100"
@@ -339,7 +353,7 @@ export default function Header() {
                   }}
                 >
                   <Icon className="h-10 w-10" />
-                </button>
+                </a>
               ))}
             </div>
           </div>
