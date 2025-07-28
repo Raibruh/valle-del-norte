@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 /* ---------- helper de animación que se reinicia ---------- */
@@ -64,7 +65,7 @@ export default function NuestraHistoriaPage() {
               Tradición y Calidad
             </h1>
             <p className="text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto font-light">
-              Más de 30 años llevando aceitunas desde el olivo hasta tu mesa
+              Desde 1995 llevando aceitunas desde el olivo hasta tu mesa
             </p>
           </section>
         </Reveal>
@@ -79,7 +80,7 @@ export default function NuestraHistoriaPage() {
                 </h2>
                 <div className="space-y-8 text-xl text-gray-600 leading-relaxed font-light">
                   <p>
-                    Con más de 30 años en el rubro, en Valle del Norte, nos dedicamos con pasión a la producción y 
+                    Desde 1995, en Valle del Norte, nos dedicamos con pasión a la producción y 
                     comercialización de aceitunas de mesa de alta calidad, destinado a los grandes mercados del retail 
                     a nivel nacional.
                   </p>
@@ -105,6 +106,31 @@ export default function NuestraHistoriaPage() {
                   <li className="flex"><Bullet />Mayor productor nacional</li>
                   <li className="flex"><Bullet />+2 millones de kilos anuales</li>
                 </ul>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Imágenes del Campo */}
+          <Reveal>
+            <div className="space-y-8">
+              <h2 className="text-5xl font-light text-[#3e541a] mb-12 text-center leading-tight">
+                Nuestro Campo
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <img
+                    src="/images/campo/campo1.png"
+                    alt="Campo de olivos Valle del Norte"
+                    className="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <img
+                    src="/images/campo/campo2.png"
+                    alt="Campo de olivos Valle del Norte"
+                    className="w-full h-96 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
               </div>
             </div>
           </Reveal>
@@ -154,6 +180,7 @@ export default function NuestraHistoriaPage() {
           </Reveal>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export default function ProductosPage() {
   return (
@@ -193,6 +194,7 @@ export default function ProductosPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 } 

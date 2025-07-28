@@ -41,6 +41,16 @@ const productos = [
       "Diseñadas para los paladares más exigentes, nuestras aceitunas premium son perfectas para aperitivos sofisticados, cócteles de autor y platos gourmet que requieren un toque especial.",
   },
   {
+    imagen: "/images/productos/pastas/pasta_show1.png",
+    titulo: "Pastas de Aceitunas",
+    descripcion:
+      "Las pastas de aceitunas de Valle del Norte representan la innovación en la tradición, donde transformamos nuestras aceitunas de mesa en productos versátiles y deliciosos.",
+    descripcion2:
+      "Nuestras pastas están elaboradas con aceitunas seleccionadas y técnicas artesanales que preservan el sabor auténtico del fruto, creando productos únicos perfectos para untar, cocinar o disfrutar como aperitivo.",
+    descripcion3:
+      "Disponibles en diferentes variedades y presentaciones, nuestras pastas de aceitunas son ideales para chefs profesionales, restaurantes y consumidores que buscan productos gourmet de la más alta calidad.",
+  },
+  {
     imagen: "/images/productos/abiertos/pichanga.jpg",
     titulo: "Pichangas Premium",
     descripcion:
@@ -102,6 +112,8 @@ export default function Hero() {
                 <div className="space-y-4">
                   {p.titulo === "Aceitunas Tradicionales" || p.titulo === "Aceitunas Premium" ? (
                     <p className="text-[#3e541a] text-xl font-medium tracking-widest">ACEITUNAS&nbsp;DE&nbsp;MESA</p>
+                  ) : p.titulo === "Pastas de Aceitunas" ? (
+                    <p className="text-[#3e541a] text-xl font-medium tracking-widest">PASTAS</p>
                   ) : p.titulo === "Pichangas Premium" ? (
                     <p className="text-[#3e541a] text-xl font-medium tracking-widest">PICHANGAS</p>
                   ) : p.titulo === "Otros Productos" ? (
