@@ -50,6 +50,12 @@ const PRODUCT_CATEGORIES = [
     ],
   },
   {
+    category: "PASTAS",
+    products: [
+      { name: "Pastas de Aceitunas", path: "/pastas-aceitunas" },
+    ],
+  },
+  {
     category: "PICHANGAS",
     products: [{ name: "Pichangas Premium", path: "/pichangas" }],
   },

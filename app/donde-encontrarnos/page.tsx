@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 /* ---------- helper que reaplica la animación ---------- */
@@ -87,7 +88,9 @@ export default function DondeEncontrarnosPage() {
                     <img
                       src={supermercado.logo}
                       alt={`Logo ${supermercado.name}`}
-                      className="w-full h-full object-contain group-hover:opacity-80 transition-opacity"
+                      className={`w-full h-full group-hover:opacity-80 transition-opacity ${
+                        supermercado.name === "Tottus" ? "object-scale-down w-[200%] h-[200%]" : "object-contain"
+                      }`}
                     />
                   </div>
                   <p className="text-center text-[#3e541a] text-lg font-light mt-4">
@@ -160,6 +163,7 @@ export default function DondeEncontrarnosPage() {
         </Reveal>
 
       </main>
+      <Footer />
     </>
   )
 }

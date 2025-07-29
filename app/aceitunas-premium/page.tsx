@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 /* ---------- helper que se reinicia cada vez ---------- */
@@ -207,6 +208,7 @@ export default function AceitunasPremium() {
           </section>
         </Reveal>
       </main>
+      <Footer />
     </>
   );
 }
