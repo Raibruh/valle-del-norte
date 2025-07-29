@@ -89,7 +89,7 @@ export default function DondeEncontrarnosPage() {
                       src={supermercado.logo}
                       alt={`Logo ${supermercado.name}`}
                       className={`w-full h-full group-hover:opacity-80 transition-opacity ${
-                        supermercado.name === "Tottus" ? "object-scale-down w-[200%] h-[200%]" : "object-contain"
+                        supermercado.name === "Tottus" ? "object-scale-down w-[225%] h-[225%]" : "object-contain"
                       }`}
                     />
                   </div>
