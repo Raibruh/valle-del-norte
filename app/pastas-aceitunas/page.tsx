@@ -130,11 +130,11 @@ export default function PastasAceitunasPage() {
             <div className="grid md:grid-cols-3 gap-16">
               {productos.map((producto, index) => (
                 <div key={index} className="space-y-6">
-                  <figure className="aspect-square rounded-2xl shadow-lg overflow-hidden bg-gray-100 flex items-center justify-center p-8">
+                  <figure className="aspect-square rounded-2xl shadow-lg overflow-hidden flex items-center justify-center p-8">
                     <img
                       src={producto.imagen}
                       alt={producto.titulo}
-                      className="w-full h-full object-contain max-w-[80%] max-h-[80%]"
+                      className={`w-full h-full object-contain ${index === 2 ? 'max-w-[150%] max-h-[150%]' : 'max-w-[80%] max-h-[80%]'}`}
                     />
                   </figure>
                   <div className="text-center space-y-4">
