@@ -91,13 +91,14 @@ export default function AceitunasTradicionales() {
             ["aceitunas_negras.jpg",               "Aceitunas Negras", "Negras", false],
             ["aceitunas_kalamata.jpg",             "Aceitunas Kalamata","Kalamata / Al Natural", true],
             ["aceitunas_azapa.jpg",                "Aceitunas Azapa",  "Azapa Naturales", false],
-          ].map(([src, alt, title, noList]) => (
+          ].map(([src, alt, title, noList], index) => (
             <Card 
               key={title as string} 
               img={`/images/productos/abiertos/${src}`}
               alt={alt as string} 
               title={title as string} 
               noList={noList as boolean}
+              isOdd={index % 2 === 0}
               onMasClick={title === "Verdes" ? () => router.push("/aceitunas-verdes") : 
                          title === "Negras" ? () => router.push("/aceitunas-negras") : 
                          undefined}
@@ -119,18 +120,18 @@ export default function AceitunasTradicionales() {
 
 /* ---------- Tarjeta ---------- */
 function Card({
-  img, alt, title, children, noList = false, onMasClick,
+  img, alt, title, children, noList = false, onMasClick, isOdd = false,
 }: {
-  img: string; alt: string; title: string; children: React.ReactNode; noList?: boolean; onMasClick?: () => void;
+  img: string; alt: string; title: string; children: React.ReactNode; noList?: boolean; onMasClick?: () => void; isOdd?: boolean;
 }) {
   return (
     <article className={cardBase}>
       <Reveal>
-        <div className="flex space-x-14 w-full">
-          <figure className="flex-shrink-0 w-[32rem] aspect-square rounded-2xl shadow-lg overflow-hidden bg-gray-100">
+        <div className={`flex space-x-14 w-full ${isOdd? 'justify-start ml-10' : 'justify-end -ml-10'}`}>
+          <figure className="flex-shrink-0 w-[32rem] h-[32rem] rounded-2xl shadow-lg overflow-hidden bg-gray-100">
             <img src={img} alt={alt} className="w-full h-full object-cover" />
           </figure>
-          <div className="flex-1">
+          <div className="flex-1 max-w-2xl">
             <Etiqueta /><Titulo>{title}</Titulo>
             <Descripcion>{children}</Descripcion>
             {!noList && <Lista />}
