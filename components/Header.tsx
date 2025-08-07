@@ -47,6 +47,7 @@ const PRODUCT_CATEGORIES = [
     products: [
       { name: "Aceitunas Tradicionales", path: "/aceitunas-tradicionales" },
       { name: "Aceitunas Premium", path: "/aceitunas-premium" },
+      { name: "Formatos", path: "/formatos" },
     ],
   },
   {
