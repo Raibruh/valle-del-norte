@@ -129,6 +129,7 @@ export default function AceitunasPremium() {
             alt="Aceitunas Verdes Rellenas"
             title="Verdes Rellenas"
             items={["Pimiento natural", "Ají natural", "Y muchas más"]}
+            isOdd={true}
             onMasClick={() => router.push("/aceitunas-verdes-rellenas")}
           >
             Aceitunas verdes premium rellenas con ingredientes naturales de la más alta calidad.
@@ -139,6 +140,7 @@ export default function AceitunasPremium() {
             alt="Aceitunas Cocktail"
             title="Cocktail"
             items={["Verdes y negras descarozadas"]}
+            isOdd={false}
           >
             Mezcla premium de aceitunas verdes y negras descarozadas, ideal para cócteles y aperitivos sofisticados.
           </Card>
@@ -148,6 +150,7 @@ export default function AceitunasPremium() {
             alt="Aceitunas Mix"
             title="Mix"
             items={["Aceitunas verdes descarozadas con pepinillos"]}
+            isOdd={true}
           >
             Combinación perfecta de aceitunas verdes descarozadas con pepinillos, creando un sabor equilibrado y refrescante.
           </Card>
@@ -215,20 +218,20 @@ export default function AceitunasPremium() {
 
 /* ---------- Tarjeta ---------- */
 function Card({
-  img, alt, title, children, items, noList = false, onMasClick,
+  img, alt, title, children, items, noList = false, onMasClick, isOdd = false,
 }: {
   img: string; alt: string; title: string; children: React.ReactNode;
-  items?: string[]; noList?: boolean; onMasClick?: () => void;
+  items?: string[]; noList?: boolean; onMasClick?: () => void; isOdd?: boolean;
 }) {
   return (
     <article className={cardBase}>
       <Reveal>
-        <div className="flex space-x-14 w-full">
-          <figure className="flex-shrink-0 w-[32rem] aspect-square rounded-2xl shadow-lg overflow-hidden bg-gray-100">
+        <div className={`flex space-x-14 w-full ${isOdd? 'justify-start ml-10' : 'justify-end -ml-10'}`}>
+          <figure className="flex-shrink-0 w-[32rem] h-[32rem] rounded-2xl shadow-lg overflow-hidden bg-gray-100">
             <img src={img} alt={alt} className="w-full h-full object-cover" />
           </figure>
 
-          <div className="flex-1">
+          <div className="flex-1 max-w-2xl">
             <Etiqueta />
             <Titulo>{title}</Titulo>
             <Descripcion>{children}</Descripcion>
